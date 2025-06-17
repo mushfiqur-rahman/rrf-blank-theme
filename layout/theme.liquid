@@ -13,12 +13,12 @@
 </head>
 <body>
 
-{% include "header.liquid" %}
+    {% include "header.liquid" %}
 
 
-<h1 class="text-red-500">This text from /template/theme.liquid</h1>
+    {{ content_for_layout }}
 
-{{ content_for_layout }}
+    {% include "footer.liquid" %}
 
 </body>
 </html>
