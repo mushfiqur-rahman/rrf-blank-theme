@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n TAILWIND,SHOPIFY -c green,blue \"npm run tailwind\" \"npm run shopify\"",
+    "tailwind": "npx @tailwindcss/cli -i ./tailwind/input.css -o ./assets/tailwind.css --watch",
+    "shopify": "shopify theme dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
