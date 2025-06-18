@@ -13,3 +13,7 @@
 .mainmenu li a{
     @apply block py-2 px-4
 }
+
+input[type="text"], input[type="email"], input[type="password"]{
+    @apply focus:outline-none
+}
