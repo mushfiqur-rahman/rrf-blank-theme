@@ -33,3 +33,20 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Integral CF', sans-serif;
     font-weight: 700;
 }
+
+.testimonial-carousel > svg {
+    position: absolute;
+    right: 40px;
+    top: -70px;
+    cursor: pointer;
+}
+
+.testimonial-carousel > svg:last-child {
+    right: 0;
+}
+
+.testimonial-carousel .slick-list {
+    margin-left: -12px;
+    margin-right: -12px;
+    overflow: inherit;
+}
